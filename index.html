@@ -8,8 +8,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
     <title>Crystal Collectors Game</title>
 </head>
 
@@ -17,7 +15,7 @@
     <h1>Crystals Collector!</h1>
     <br>
     <div class="instructions">
-        <ol>
+        <ul>
             <li>You will be given a random number at the start of the game.</li>
             <br>
             <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
@@ -29,33 +27,40 @@
             <li>The value of each crystal is hidden from you until you click on it.</li>
             <br>
             <li>Each time when the game starts, the game will change the values of each crystal.</li>
-        </ol>
+        </ul>
     </div>
     <br>
     <hr>
     <br>
     <div id="comp-score">
-        <span id="computer-score">Score to Match: </span>
+        <p id="computer-score">Score to beat: </p>
     </div>
     <br>
     <div id="wins-losses">
-        <p><span id="wins">Wins: </span></p>
+        <p>
+            <p id="user-wins">Wins: </p>
+        </p>
         <br>
-        <p><span id="losses">Losses: </span></p>
+        <p>
+            <p id="user-losses">Losses: </p>
+        </p>
         <br>
     </div>
     <div id="images">
         <img src="assets/images/ruby.png" alt="Ruby" style="width:200px;height:200px;" class="stoneImage" id="rubyImage">
-        <img src="assets/images/diamond.png" alt="Ruby" style="width:200px;height:200px;" class="stoneImage" id="diamondImage">
-        <img src="assets/images/saphire2.png" alt="Ruby" style="width:200px;height:200px;" class="stoneImage" id="saphireImage">
-        <img src="assets/images/emerald.png" alt="Ruby" style="width:200px;height:200px;" class="stoneImage" id="emeraldImage">
+        <img src="assets/images/diamond.png" alt="Diamond" style="width:200px;height:200px;" class="stoneImage" id="diamondImage">
+        <img src="assets/images/saphire2.png" alt="Saphire" style="width:200px;height:200px;" class="stoneImage" id="saphireImage">
+        <img src="assets/images/emerald.png" alt="Emerald" style="width:200px;height:200px;" class="stoneImage" id="emeraldImage">
     </div>
     <br>
     <div id="total-score">
         <p>Your total score is:</p>
         <br>
-        <span id="user-total-score">User Score</span>
+        <p id="user-total-score"></p>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
 
 </body>
 
